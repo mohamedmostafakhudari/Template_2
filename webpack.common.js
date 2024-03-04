@@ -5,7 +5,7 @@ module.exports = {
 	entry: "./src/index.js",
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: "Template 1",
+			title: "Template 2",
 			template: "./src/template.html",
 		}),
 	],
@@ -18,7 +18,7 @@ module.exports = {
 		rules: [
 			{
 				test: /\.css$/i,
-				use: ["style-loader", "css-loader"],
+				use: ["style-loader", "css-loader", "postcss-loader"],
 			},
 			{
 				test: /\.(png|svg|jpg|jpeg|gif)$/i,
